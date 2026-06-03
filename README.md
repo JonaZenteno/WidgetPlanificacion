@@ -60,6 +60,29 @@ Si quieres activarlo manualmente:
 2. creando un lanzador silencioso con `pythonw.exe` y `main.pyw`, o
 3. empaquetando la app como `.exe` sin consola.
 
+### Instalacion estable recomendada
+
+Para uso diario en Windows, la opcion mas estable es:
+
+1. compilar o usar `WidgetDashboard.exe`
+2. copiarlo a una ruta fija, por ejemplo:
+
+```text
+C:\Apps\WidgetDashboard\WidgetDashboard.exe
+```
+
+3. configurar el autoinicio silencioso apuntando a esa ruta
+
+Ejemplo de `widget_dashboard_start.vbs` en la carpeta `Startup`:
+
+```vbscript
+Set shell = CreateObject("WScript.Shell")
+shell.Run Chr(34) & "C:\Apps\WidgetDashboard\WidgetDashboard.exe" & Chr(34), 0, False
+Set shell = Nothing
+```
+
+De esta forma el autoinicio ya no depende del codigo fuente ni de `python.exe`.
+
 ### Script Python o `.bat`
 
 Opciones recomendadas:
