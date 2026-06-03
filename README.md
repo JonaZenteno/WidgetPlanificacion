@@ -37,7 +37,7 @@ python -m unittest discover -s tests
 
 ## Datos del usuario
 
-Los datos de ejecucion ya no se guardan dentro del repositorio.
+Los datos de ejecucion no se guardan dentro del repositorio.
 
 - Windows: `%APPDATA%\WidgetDashboard`
 - Otros sistemas: `.widget_dashboard/` dentro del proyecto
